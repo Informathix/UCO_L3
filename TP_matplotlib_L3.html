@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 </a><html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>matplotlib</title>
     <style type="text/css" style="display:none">/* CSS Document */
      body{
@@ -421,13 +421,13 @@
       <div class="content_body">
 	<div class="content_interior"><div class="left_column">
 	  <!--<div class="image">
-	       <img src="images/anne.jpg" alt="Anne-Cécile"/>
+	       <img src="images/anne.jpg" alt="Anne-CÃ©cile"/>
 	       </div>-->
 	  <br />
 	  <div class="navigation">
 	    <ul class="markermenu">
 	      <li class="markermenu"><a href="#exo1" >Courbes</a></li>
-	      <li class="markermenu"><a href="#exo2" >Intégrale</a></li>
+	      <li class="markermenu"><a href="#exo2" >IntÃ©grale</a></li>
 	      <li class="markermenu"><a href="#exo3">Camembert</a></li>
 	      <li class="markermenu"><a href="#exo4">Histogramme</a></li>
 	      <li class="markermenu"><a href="#exo5">Image</a></li>
@@ -450,7 +450,7 @@
             <img style="border: 0pt none;" title="matplotlib" src="images/logo-matplotlib.png" alt="matplotlib" width="250" />
 	  </div>
 
-	  <p>Ci-dessous quelques exercices pour apprendre à jouer avec matplotlib et numpy. Ils sont à peu près par ordre croissant de difficulté, mais ils peuvent être faits indépendamment les uns des autres.</p>
+	  <p>Ci-dessous quelques exercices pour apprendre Ã  jouer avec matplotlib et numpy. Ils sont Ã  peu prÃ¨s par ordre croissant de difficultÃ©, mais ils peuvent Ãªtre faits indÃ©pendamment les uns des autres.</p>
 	  <br /><br />
 
 
@@ -465,17 +465,17 @@
 	  <p>Dans cet exercice, nous allons tracer les fonctions sinus et cosinus. Voici la recette inratable :</p>
 	  <ul>
 	    <li>Commencer par importer <i>numpy</i> et <i>matplotlib.pyplot</i>.</li>
-	    <li>Utiliser la fonction <a href="http://docs.scipy.org/doc/numpy/reference/generated/numpy.linspace.html">linspace</a> de numpy pour définir les valeurs de <i>x</i>. On se restreindra à l'intervalle <i>[-&pi;;&pi;]</i>.</li>
-	    <li>Utiliser la fonction <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot">plot</a> de matplotlib pour tracer la courbe en trait plein rouge. La fonction <a href="http://docs.scipy.org/doc/numpy/reference/generated/numpy.sin.html">sinus</a> est définie dans numpy. </li>
-	    <li>Utiliser la fonction <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show">show</a> de matplotlib pour admirer le résultat en exécutant le code.
-	      <li>Jouer sur l'argument <i>num</i> de la fonction <i>linspace</i>. Observer. Pour la suite, on pourra prendre <i>100</i> pour ce paramètre.</li>
-	      <li>De manière similaire, tracer la fonction cosinus en bleu.</li>
-	      <li>Mettre la légende dans le coin en haut à gauche en utilisant la fonction <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.legend">legend</a>.</li>
+	    <li>Utiliser la fonction <a href="http://docs.scipy.org/doc/numpy/reference/generated/numpy.linspace.html">linspace</a> de numpy pour dÃ©finir les valeurs de <i>x</i>. On se restreindra Ã  l'intervalle <i>[-&pi;;&pi;]</i>.</li>
+	    <li>Utiliser la fonction <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot">plot</a> de matplotlib pour tracer la courbe en trait plein rouge. La fonction <a href="http://docs.scipy.org/doc/numpy/reference/generated/numpy.sin.html">sinus</a> est dÃ©finie dans numpy. </li>
+	    <li>Utiliser la fonction <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show">show</a> de matplotlib pour admirer le rÃ©sultat en exÃ©cutant le code.
+	      <li>Jouer sur l'argument <i>num</i> de la fonction <i>linspace</i>. Observer. Pour la suite, on pourra prendre <i>100</i> pour ce paramÃ¨tre.</li>
+	      <li>De maniÃ¨re similaire, tracer la fonction cosinus en bleu.</li>
+	      <li>Mettre la lÃ©gende dans le coin en haut Ã  gauche en utilisant la fonction <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.legend">legend</a>.</li>
 	      <li>Ajouter un titre aux deux axes en utilisant les fonctions <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.xlabel">xlabel</a> et <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.ylabel">ylabel</a>.</li>
 	      <li>Fixer les limites de chaque axe en utilisant la fonction <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.axis">axis</a> de matplotlib.</li>
-	      <li>Indiquer sur la figure des valeurs -1, 0 et 1 sur l'axe des <i>y</i> à l'aide de la fonction <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.yticks">yticks</a>.</li>
-	      <li>De même, indiquer sur l'axe des <i>x</i> les valeurs -&pi;, -&pi;/2, 0, &pi;/2 et &pi; en utilisant la fonction <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.xticks">xticks</a>. On pourra pour cela utiliser le parser latex de matplotlib (voir <a href="http://matplotlib.org/users/usetex.html">ici</a>).</li>
-	      <li>Ajouter de discrètes lignes verticales et horizontales en face des valeurs indiquées sur les deux axes à l'aide de la fonction <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.grid">grid</a>.</li>
+	      <li>Indiquer sur la figure des valeurs -1, 0 et 1 sur l'axe des <i>y</i> Ã  l'aide de la fonction <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.yticks">yticks</a>.</li>
+	      <li>De mÃªme, indiquer sur l'axe des <i>x</i> les valeurs -&pi;, -&pi;/2, 0, &pi;/2 et &pi; en utilisant la fonction <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.xticks">xticks</a>. On pourra pour cela utiliser le parser latex de matplotlib (voir <a href="http://matplotlib.org/users/usetex.html">ici</a>).</li>
+	      <li>Ajouter de discrÃ¨tes lignes verticales et horizontales en face des valeurs indiquÃ©es sur les deux axes Ã  l'aide de la fonction <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.grid">grid</a>.</li>
 	      <li>Enfin, utiliser la fonction <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.savefig">savefig</a> pour sauvegarder automatiquement la figure produite au format <i>png</i>.</li>
 	  </ul>
 
@@ -485,29 +485,29 @@
 	  
 	  
 	  <br /> <br />
-	  <h4><a name="exo2">Ma première intégrale</a></h4>
+	  <h4><a name="exo2">Ma premiÃ¨re intÃ©grale</a></h4>
 	  <div class="endright_column2">
             <br />
             <a href="images/integrale.png"><img style="border: 0pt none;" title="integrale" src="images/integrale.png" alt="integrale" width="150" /></a>
 	  </div>
 
-	  <p>Dans cet exercice, nous allons dessiner une courbe et montrer son intégration sur un intervalle comme étant l'aire sous la courbe</p>
+	  <p>Dans cet exercice, nous allons dessiner une courbe et montrer son intÃ©gration sur un intervalle comme Ã©tant l'aire sous la courbe</p>
 
-	  <p>Définir la fonction <i>f(x) = (x - 3) * (x - 5) * (x - 7) + 85</i>. Tracer cette fonction sur l'intervalle [0; 10] en faisant commencer l'axe des <i>y</i> à 0 à l'aide de la fonction <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.ylim">ylim</a>.</p>
+	  <p>DÃ©finir la fonction <i>f(x) = (x - 3) * (x - 5) * (x - 7) + 85</i>. Tracer cette fonction sur l'intervalle [0; 10] en faisant commencer l'axe des <i>y</i> Ã  0 Ã  l'aide de la fonction <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.ylim">ylim</a>.</p>
 
-	  <p>On va intégrer entre <i>a = 2</i> et <i>b = 9</i>. Définir <i>a</i> et <i>b</i> et les indiquer sur l'axe des <i>x</i> en utilisant la fonction <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.xticks">xticks</a>. Utiliser la fonction <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.yticks">yticks</a> pour enlever toutes les valeurs de l'axe y. Enfin, utiliser la fonction <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.tick_params">tick_params</a> pour enlever les deux 'ticks' sur l'axe du haut.</p>
+	  <p>On va intÃ©grer entre <i>a = 2</i> et <i>b = 9</i>. DÃ©finir <i>a</i> et <i>b</i> et les indiquer sur l'axe des <i>x</i> en utilisant la fonction <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.xticks">xticks</a>. Utiliser la fonction <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.yticks">yticks</a> pour enlever toutes les valeurs de l'axe y. Enfin, utiliser la fonction <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.tick_params">tick_params</a> pour enlever les deux 'ticks' sur l'axe du haut.</p>
 
-	  <p>Utiliser la fonction <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.figtext">figtext</a> pour indiquer 'x' en bas à droite sous l'axe des <i>x</i> et 'y' en haut à gauche de l'axe des <i>y</i>.</p>
+	  <p>Utiliser la fonction <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.figtext">figtext</a> pour indiquer 'x' en bas Ã  droite sous l'axe des <i>x</i> et 'y' en haut Ã  gauche de l'axe des <i>y</i>.</p>
 	  
-	  <p>Utiliser la fonction <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.subplots">subplots</a> pour créer un <i>subplot</i> (qui va contenir notre figure) et stocker les valeurs de retour de cette fonction.</p>
+	  <p>Utiliser la fonction <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.subplots">subplots</a> pour crÃ©er un <i>subplot</i> (qui va contenir notre figure) et stocker les valeurs de retour de cette fonction.</p>
 
-	  <p>Définir <i>x2</i> comme étant dans l'intervale [a; b] en utilisant la fonction <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.linspace">linspace</a>. Définir <i>y2</i> comme étant les valeurs de f(x2).</p>
+	  <p>DÃ©finir <i>x2</i> comme Ã©tant dans l'intervale [a; b] en utilisant la fonction <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.linspace">linspace</a>. DÃ©finir <i>y2</i> comme Ã©tant les valeurs de f(x2).</p>
 
-	  <p>Importer la fonction <a href="http://matplotlib.org/api/patches_api.html#matplotlib.patches.Polygon">Polygon</a> de matplotlib.patches qui va nous permettre de dessiner des polygones (nécessaires pour dessiner des surfaces). <a href="http://matplotlib.org/1.4.0/api/axes_api.html?highlight=add_patch#matplotlib.axes.Axes.add_patch">add_patch</a> pour ajouter le polygone que l'on va créer à notre figure</p>
+	  <p>Importer la fonction <a href="http://matplotlib.org/api/patches_api.html#matplotlib.patches.Polygon">Polygon</a> de matplotlib.patches qui va nous permettre de dessiner des polygones (nÃ©cessaires pour dessiner des surfaces). <a href="http://matplotlib.org/1.4.0/api/axes_api.html?highlight=add_patch#matplotlib.axes.Axes.add_patch">add_patch</a> pour ajouter le polygone que l'on va crÃ©er Ã  notre figure</p>
 
-	  <p>Le premier argument de la fonction Polygon est un tableau de taille N*2 qui indique les coordonnées des sommets du polygone. Utiliser les fonctions python <a href="https://docs.python.org/3/library/functions.html?highlight=zip#zip">zip</a> et <a href="https://docs.python.org/3/library/stdtypes.html#list">list</a> pour mettre les coordonnées <i>x2</i> et <i>y2</i> au bon format pour la fonction Polygon. Utiliser 0.9 comme valeur pour le paramètre <i>facecolor</i> et 0.5 pour le paramètre <i>edgecolor</i>.</p>
+	  <p>Le premier argument de la fonction Polygon est un tableau de taille N*2 qui indique les coordonnÃ©es des sommets du polygone. Utiliser les fonctions python <a href="https://docs.python.org/3/library/functions.html?highlight=zip#zip">zip</a> et <a href="https://docs.python.org/3/library/stdtypes.html#list">list</a> pour mettre les coordonnÃ©es <i>x2</i> et <i>y2</i> au bon format pour la fonction Polygon. Utiliser 0.9 comme valeur pour le paramÃ¨tre <i>facecolor</i> et 0.5 pour le paramÃ¨tre <i>edgecolor</i>.</p>
 
-	  <p>Utiliser la fonction <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.text">text</a> pour afficher la formule de l'intégrale au milieu du polygone. Puis sauvegarder l'image au format pdf.</p>
+	  <p>Utiliser la fonction <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.text">text</a> pour afficher la formule de l'intÃ©grale au milieu du polygone. Puis sauvegarder l'image au format pdf.</p>
 
 
 	  <br />
@@ -523,23 +523,23 @@
 	  </div>
 
 
-	  <p>Dans cet exercice, nous allons réaliser un camembert pour représenter la répartition suivante entre 5 options : option 1 = 25; option 2 = 15; option 3 = 60; option 4 = 30 et option 5 = 14.</p>
+	  <p>Dans cet exercice, nous allons rÃ©aliser un camembert pour reprÃ©senter la rÃ©partition suivante entre 5 options : option 1 = 25; option 2 = 15; option 3 = 60; option 4 = 30 et option 5 = 14.</p>
 
 	  <p>Pour cela, nous allons utiliser la fonction <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.pie">pie</a> de matplotlib.</p>
 
-	  <p>Utiliser la propriété <i>equal</i> dans la fonction <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.axis">axis</a> pour que le camembert soit circulaire.</p>
+	  <p>Utiliser la propriÃ©tÃ© <i>equal</i> dans la fonction <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.axis">axis</a> pour que le camembert soit circulaire.</p>
 
-	  <p>Définir les couleurs des 5 parts en utilisant les couleurs html : <i>lightseagreen</i>, <i>lightsalmon</i>, <i>lightskyblue</i>, <i>lightcoral</i> et <i>lightgreen</i>.</p>
+	  <p>DÃ©finir les couleurs des 5 parts en utilisant les couleurs html : <i>lightseagreen</i>, <i>lightsalmon</i>, <i>lightskyblue</i>, <i>lightcoral</i> et <i>lightgreen</i>.</p>
 
-	  <p>Utiliser l'attribut <i>autopct</i> pour afficher les pourcentages à l'intérieur de chaque part.</p>
+	  <p>Utiliser l'attribut <i>autopct</i> pour afficher les pourcentages Ã  l'intÃ©rieur de chaque part.</p>
 
-	  <p>Utiliser l'attribut <i>explode</i> pour faire ressortir les résultats de l'option 2 et de l'option 4.</p>
+	  <p>Utiliser l'attribut <i>explode</i> pour faire ressortir les rÃ©sultats de l'option 2 et de l'option 4.</p>
 
 	  <p>Jouer avec les attributs <i>counterclock</i> et <i>startangle</i>. Observer.</p>
 
 	  <p>Modifier l'attribut <i>textprops</i> pour mettre le texte en gras et le grossir.</p> 
 
-	  <p>Au lieu de mettre en dur dans le code les valeurs pour chaque option, on va utiliser un fichier externe <i>donnees.txt</i> qui stockera ces valeurs (et qui pourra avoir été généré par un autre programme). Ensuite, on accèdera aux données de ce fichier en utilisant la fonction <a href="http://docs.scipy.org/doc/numpy/reference/generated/numpy.loadtxt.html">loadtxt</a> de numpy.</p>
+	  <p>Au lieu de mettre en dur dans le code les valeurs pour chaque option, on va utiliser un fichier externe <i>donnees.txt</i> qui stockera ces valeurs (et qui pourra avoir Ã©tÃ© gÃ©nÃ©rÃ© par un autre programme). Ensuite, on accÃ¨dera aux donnÃ©es de ce fichier en utilisant la fonction <a href="http://docs.scipy.org/doc/numpy/reference/generated/numpy.loadtxt.html">loadtxt</a> de numpy.</p>
 
 	  <br />
 	 
@@ -554,17 +554,17 @@
             <a href="images/histo.png"><img style="border: 0pt none;" title="histogramme" src="images/histo.png" alt="histogramme" width="150" /></a>
 	  </div>
 
-	  <p>Dans cet exercice, nous allons tracer des histogrammes de répartition des notes à des devoirs, notes générées aléatoirement en utilisant des lois bien connues.</p>
+	  <p>Dans cet exercice, nous allons tracer des histogrammes de rÃ©partition des notes Ã  des devoirs, notes gÃ©nÃ©rÃ©es alÃ©atoirement en utilisant des lois bien connues.</p>
 
-	  <p>Pour générer les notes des 26 étudiants aux 4 devoirs, nous allons utiliser les lois de probabilité du module <a href="http://docs.scipy.org/doc/numpy/reference/routines.random.html">random</a> de numpy. On pourra par exemple utiliser une loi uniforme pour le premier devoir, une loi de puissance pour le deuxième (c'était un devoir à la maison), une loi de Poisson pour le troisième et une loi de Laplace pour le quatrième. Les paramètres de ces lois sont laissées à la discrétion des participants. On pourra utiliser la fonction <a href="https://docs.python.org/3/library/functions.html?highlight=round#round">round</a> pour arrondir les notes à 2 chiffres après la virgule.</p>
+	  <p>Pour gÃ©nÃ©rer les notes des 26 Ã©tudiants aux 4 devoirs, nous allons utiliser les lois de probabilitÃ© du module <a href="http://docs.scipy.org/doc/numpy/reference/routines.random.html">random</a> de numpy. On pourra par exemple utiliser une loi uniforme pour le premier devoir, une loi de puissance pour le deuxiÃ¨me (c'Ã©tait un devoir Ã  la maison), une loi de Poisson pour le troisiÃ¨me et une loi de Laplace pour le quatriÃ¨me. Les paramÃ¨tres de ces lois sont laissÃ©es Ã  la discrÃ©tion des participants. On pourra utiliser la fonction <a href="https://docs.python.org/3/library/functions.html?highlight=round#round">round</a> pour arrondir les notes Ã  2 chiffres aprÃ¨s la virgule.</p>
 
-	  <p>Nous allons maintenant utiliser la fonction <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.hist">hist</a> pour tracer les histogrammes correspondants à chaque devoir. On pourra utiliser le type <i>bar</i> et fixer le paramètre <i>alpha</i> à 0.8 pour que les barres soient légèrement transparentes.</p>
+	  <p>Nous allons maintenant utiliser la fonction <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.hist">hist</a> pour tracer les histogrammes correspondants Ã  chaque devoir. On pourra utiliser le type <i>bar</i> et fixer le paramÃ¨tre <i>alpha</i> Ã  0.8 pour que les barres soient lÃ©gÃ¨rement transparentes.</p>
 
-	  <p>Observer l'axe des x et faire quelque chose pour qu'il indique ce qu'on s'attend à voir.</p>
+	  <p>Observer l'axe des x et faire quelque chose pour qu'il indique ce qu'on s'attend Ã  voir.</p>
 
-	  <p>Avoir les quatres histogrammes sur la même figure n'est pas très lisible. Nous allons donc les mettre chacun dans une sous-figure différente à l'aide de la commande <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.subplots">subplots</a>. Modifier le reste du script pour que ça marche comme on veut.</p>
+	  <p>Avoir les quatres histogrammes sur la mÃªme figure n'est pas trÃ¨s lisible. Nous allons donc les mettre chacun dans une sous-figure diffÃ©rente Ã  l'aide de la commande <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.subplots">subplots</a>. Modifier le reste du script pour que Ã§a marche comme on veut.</p>
 
-	  <p>On va maintenant rajouter un cinquième histogramme qui va contenir les moyennes de chaque devoir et l'écart-type. Pour cela, au lieu d'utiliser la fonction <i>subplots</i>, on va utiliser la fonction <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.subplot2grid">subplot2grid</a> pour que le dernier histogramme prenne toute la largeur de la figure. Pour dessiner cet histogramme, on utilisera la fonction <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.bar">bar</a>. Pour calculer les moyennes et les écarts-types, on utilisera les fonctions numpy <a href="http://docs.scipy.org/doc/numpy/reference/generated/numpy.mean.html">mean</a> et <a href="http://docs.scipy.org/doc/numpy/reference/generated/numpy.std.html">std</a>.</p>
+	  <p>On va maintenant rajouter un cinquiÃ¨me histogramme qui va contenir les moyennes de chaque devoir et l'Ã©cart-type. Pour cela, au lieu d'utiliser la fonction <i>subplots</i>, on va utiliser la fonction <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.subplot2grid">subplot2grid</a> pour que le dernier histogramme prenne toute la largeur de la figure. Pour dessiner cet histogramme, on utilisera la fonction <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.bar">bar</a>. Pour calculer les moyennes et les Ã©carts-types, on utilisera les fonctions numpy <a href="http://docs.scipy.org/doc/numpy/reference/generated/numpy.mean.html">mean</a> et <a href="http://docs.scipy.org/doc/numpy/reference/generated/numpy.std.html">std</a>.</p>
 
 	  <br />
 	 
@@ -572,23 +572,23 @@
 
 
 	  <br /> <br />
-	  <h4><a name="exo5">Ma première image</a></h4>
+	  <h4><a name="exo5">Ma premiÃ¨re image</a></h4>
 	  <div class="endright_column2">
             <br />
             <a href="images/GH-image.png"><img style="border: 0pt none;" title="histogramme" src="images/GH-image.png" alt="histogramme" width="150" /></a>
 	  </div>
 	  
-	  <p>Dans cet exercice, on va manipuler une image et tracer les histogrammes des RVB : un histogramme représentant la répartition entre les différentes valeurs possibles pour chacune des 3 couleurs de base (rouge, vert, bleu).</p>
+	  <p>Dans cet exercice, on va manipuler une image et tracer les histogrammes des RVB : un histogramme reprÃ©sentant la rÃ©partition entre les diffÃ©rentes valeurs possibles pour chacune des 3 couleurs de base (rouge, vert, bleu).</p>
 
-	  <p>Commençons par télécharger l'image png qui se trouve <a href="images/Grace_Hopper.png">là</a>. Ensuite, il faut importer l'image dans matplotlib grâce à la fonction <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.imread">imread</a> puis afficher l'image avec la fonction <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.imshow">imshow</a>. Noter que, comme expliqué <a href="http://matplotlib.org/users/image_tutorial.html">ici</a>, <i>imread</i> renvoie un tableau contenant les valeurs RVB pour chaque pixel.</p>
+	  <p>CommenÃ§ons par tÃ©lÃ©charger l'image png qui se trouve <a href="images/Grace_Hopper.png">lÃ </a>. Ensuite, il faut importer l'image dans matplotlib grÃ¢ce Ã  la fonction <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.imread">imread</a> puis afficher l'image avec la fonction <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.imshow">imshow</a>. Noter que, comme expliquÃ© <a href="http://matplotlib.org/users/image_tutorial.html">ici</a>, <i>imread</i> renvoie un tableau contenant les valeurs RVB pour chaque pixel.</p>
 
 	  <p>Utiliser la fonction <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.axis">axis</a> pour enlever les axes <i>x</i> et <i>y</i>.</p>
 
-	  <p>Utiliser la fonction <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.axes">axes</a> pour positionner 4 sous-figures, une au-dessus, une à droite, une en-dessous et une à gauche, en indiquant leurs coordonnées dans la figure globale (paramètre <i>rect</i>).</p>
+	  <p>Utiliser la fonction <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.axes">axes</a> pour positionner 4 sous-figures, une au-dessus, une Ã  droite, une en-dessous et une Ã  gauche, en indiquant leurs coordonnÃ©es dans la figure globale (paramÃ¨tre <i>rect</i>).</p>
 
-	  <p>Remplir 3 des sous-figures crées avec les 3 histogrammes de couleur en utilisant la fonction <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.hist">hist</a> avec <i>stepfilled</i> comme valeur pour le paramètre <i>histtype</i>. Utiliser la dernière sous-figure pour tracer l'histogramme de la luminosité de l'image (valeurs cumulées pour les trois couleurs).</p>
+	  <p>Remplir 3 des sous-figures crÃ©es avec les 3 histogrammes de couleur en utilisant la fonction <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.hist">hist</a> avec <i>stepfilled</i> comme valeur pour le paramÃ¨tre <i>histtype</i>. Utiliser la derniÃ¨re sous-figure pour tracer l'histogramme de la luminositÃ© de l'image (valeurs cumulÃ©es pour les trois couleurs).</p>
 	  
-	  <p>Utiliser les fonctions appropriées pour ajouter une légende à chaque graphe, ajouter des valeurs sur les axes et enlever celles qui sont illisibles.</p>
+	  <p>Utiliser les fonctions appropriÃ©es pour ajouter une lÃ©gende Ã  chaque graphe, ajouter des valeurs sur les axes et enlever celles qui sont illisibles.</p>
 
 	  <br />
 	 
@@ -605,11 +605,11 @@
 
 	  <p>Dans cet exercice, nous allons tracer une courbe en 3D, la projeter et la faire tourner.</p>
 
-	  <p>Tout d'abord, nous allons utiliser la fonction <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.gca">gca</a> pour créer une figure 3D en fixant le paramètre <i>projection</i> à <i>3d</i>.</p>
+	  <p>Tout d'abord, nous allons utiliser la fonction <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.gca">gca</a> pour crÃ©er une figure 3D en fixant le paramÃ¨tre <i>projection</i> Ã  <i>3d</i>.</p>
 
-	  <p>Ensuite, nous allons utiliser la classe <a href="http://matplotlib.org/mpl_toolkits/mplot3d/api.html#axes3d">axes3d</a> du module <i>mplot3d</i> de <i>mpl_toolkits</i> (un module de matplotlib). Nous allons utiliser la fonction <a href="http://matplotlib.org/mpl_toolkits/mplot3d/api.html#module-mpl_toolkits.mplot3d.axes3d">get_test_data</a> pour générer les données.</p>
+	  <p>Ensuite, nous allons utiliser la classe <a href="http://matplotlib.org/mpl_toolkits/mplot3d/api.html#axes3d">axes3d</a> du module <i>mplot3d</i> de <i>mpl_toolkits</i> (un module de matplotlib). Nous allons utiliser la fonction <a href="http://matplotlib.org/mpl_toolkits/mplot3d/api.html#module-mpl_toolkits.mplot3d.axes3d">get_test_data</a> pour gÃ©nÃ©rer les donnÃ©es.</p>
 	  
-	  <p>Pour tracer la courbe 3D, nous allons utiliser la fonction <a href="http://matplotlib.org/1.3.1/mpl_toolkits/mplot3d/tutorial.html#surface-plots">plot_surface</a> du module <i>mplot3d</i>. On utilisera 8 comme valeur pour les paramètres <i>rstride</i> et <i>cstride</i> et 0.3 pour <i>alpha</i>.</p>
+	  <p>Pour tracer la courbe 3D, nous allons utiliser la fonction <a href="http://matplotlib.org/1.3.1/mpl_toolkits/mplot3d/tutorial.html#surface-plots">plot_surface</a> du module <i>mplot3d</i>. On utilisera 8 comme valeur pour les paramÃ¨tres <i>rstride</i> et <i>cstride</i> et 0.3 pour <i>alpha</i>.</p>
 	  
 	  <p>Utiliser la fonction <a href="http://matplotlib.org/1.3.1/mpl_toolkits/mplot3d/tutorial.html#filled-contour-plots">contourf</a> du module <i>mplot3d</i> pour projeter la courbe sur les trois plans. Lancer le script et faire tourner la courbe!</p>
 
@@ -619,15 +619,15 @@
 
 
 	  <br /> <br />
-	  <h4><a name="help">Où trouver de l'aide</a></h4>
+	  <h4><a name="help">OÃ¹ trouver de l'aide</a></h4>
 	  <ul>
-	    <li><a href="http://docs.scipy.org/doc/numpy/reference/">La référence numpy</a> (en)</li>
+	    <li><a href="http://docs.scipy.org/doc/numpy/reference/">La rÃ©fÃ©rence numpy</a> (en)</li>
 	    <li><a href="http://matplotlib.org">matplotlib</a> (en)</li>
 	    <li><a href="http://matplotlib.org/gallery.html">gallerie matplotlib</a> (en)</li>
 	    <li><a href="http://matplotlib.org/users/image_tutorial.html">un tutoriel sur les images en matplotlib</a> (en)</li>
-	    <li><a href="http://www.science-emergence.com/Matplotlib/">une introduction à matplotlib</a> (fr)</li>
-	    <li><a href="http://en.wikipedia.org/wiki/Matplotlib">l'article Wikipédia sur matplotlib</a> (en) avec quelques exemples</li>
-	    <li><a href="http://math.mad.free.fr/depot/numpy/essai.html">une introduction à numpy/scipy/matplotlib</a> (fr)</li>
+	    <li><a href="http://www.science-emergence.com/Matplotlib/">une introduction Ã  matplotlib</a> (fr)</li>
+	    <li><a href="http://en.wikipedia.org/wiki/Matplotlib">l'article WikipÃ©dia sur matplotlib</a> (en) avec quelques exemples</li>
+	    <li><a href="http://math.mad.free.fr/depot/numpy/essai.html">une introduction Ã  numpy/scipy/matplotlib</a> (fr)</li>
 	  </ul>
 	  
 	  
@@ -649,7 +649,7 @@
 	  </div>
 	  
 	  <hr width="100%"  noshade="noshade" style="border-top:1px solid #FFFFFF; border-bottom: none; margin-bottom:5px;" />
-	  <div style="text-align:center;">Copyright © 2014 Anne-Cécile Orgerie </div>
+	  <div style="text-align:center;">Copyright Â© 2014 Anne-CÃ©cile Orgerie </div>
 	</div></div>
 
   </body>
