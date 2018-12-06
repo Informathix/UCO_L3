@@ -12,8 +12,7 @@ devoir = [[np.floor(i) for i in uniform(0, n_max+1, nb_etu)],
           [np.floor(k) for k in poisson(n_max/2, nb_etu)],
           [np.floor(l) for l in laplace(n_max/2, 1, nb_etu)],
           [np.floor(j) for j in n_max*power(2, nb_etu)],
-          [np.floor(j) for j in n_max*power(15, nb_etu)],
-          [np.floor(k) for k in poisson(2*n_max/3, nb_etu)]
+          [np.floor(j) for j in n_max*power(15, nb_etu)]
          ]
 
 n_dev = len(devoir)
